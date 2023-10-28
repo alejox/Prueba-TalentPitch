@@ -8,9 +8,10 @@ export default {
         roboto: ['roboto', 'sans-serif']
       },
       fontSize: {
-        sm: '.875rem',
-        base: '1rem',
-        lg: '1.125rem',
+        xs: '9px',
+        sm: '14px',
+        base: '16px',
+        lg: '24px',
         xl: '1.25rem'
       },
 
@@ -18,9 +19,11 @@ export default {
         primary: '#1A237E',
         secondary: '#DE1C7D',
         tertiary: '#9FA8DA',
-        success: '#8BC34A'
+        success: '#8BC34A',
+        info: '#E3F2FD',
+        infoText: '#2196F3'
       }
     }
-  },
-  plugins: [require('flowbite/plugin')]
+  }
+  // plugins: [require('flowbite/plugin')]
 };

@@ -63,11 +63,11 @@
       <div
         v-for="item in data"
         :key="item.icon"
-        class="py-5 border-b last:border-0 flex justify-between items-center"
+        class="py-4 border-b last:border-0 flex justify-between items-center"
       >
         <div class="flex items-center gap-1">
           <img :src="`src/assets/svg/${item.icon}.svg`" alt="" />
-          <p class="text-gray-500 font-semibold uppercase">{{ item.text }}</p>
+          <p class="text-gray-500 text-xs font-semibold uppercase">{{ item.text }}</p>
         </div>
         <p class="text-gray-500 font-bold">20</p>
       </div>

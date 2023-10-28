@@ -92,18 +92,12 @@
         <TabProfile />
       </div>
       <div
-        class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+        class="hidden dark:bg-gray-800"
         id="dashboard"
         role="tabpanel"
         aria-labelledby="dashboard-tab"
       >
-        <p class="text-sm text-gray-500 dark:text-gray-400">
-          This is some placeholder content the
-          <strong class="font-medium text-gray-800 dark:text-white"
-            >Dashboard tab's associated content</strong
-          >. Clicking another tab will toggle the visibility of this one for the next. The tab
-          JavaScript swaps classes to control the content visibility and styling.
-        </p>
+        <TabVacancy />
       </div>
       <div
         class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
@@ -111,13 +105,7 @@
         role="tabpanel"
         aria-labelledby="settings-tab"
       >
-        <p class="text-sm text-gray-500 dark:text-gray-400">
-          This is some placeholder content the
-          <strong class="font-medium text-gray-800 dark:text-white"
-            >Settings tab's associated content</strong
-          >. Clicking another tab will toggle the visibility of this one for the next. The tab
-          JavaScript swaps classes to control the content visibility and styling.
-        </p>
+        Listas
       </div>
       <div
         class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
@@ -142,6 +130,7 @@ import { ref } from 'vue';
 import { onMounted } from 'vue';
 import { initFlowbite } from 'flowbite';
 import TabProfile from './tabs/TabProfile.vue';
+import TabVacancy from './tabs/TabVacancy.vue';
 let progress = ref(80);
 onMounted(() => {
   initFlowbite();
@@ -157,5 +146,13 @@ onMounted(() => {
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: #de1c7d;
+}
+
+.text-gray-500 {
+  color: #9fa8da;
+}
+.border-gray-100 {
+  --tw-border-opacity: 1;
+  border-color: none;
 }
 </style>

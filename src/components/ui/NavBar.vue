@@ -1,6 +1,6 @@
 <template>
   <Disclosure as="nav" class="bg-primary" v-slot="{ open }">
-    <div class="mx-auto max-w-[1440px] px-2 py-6 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-[1440px] px-12 py-3 sm:px-6 lg:px-[140px]">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
